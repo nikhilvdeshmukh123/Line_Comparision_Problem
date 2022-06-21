@@ -28,12 +28,15 @@ public class LineComparison {
         return (int) Math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
     }
 
-    // Method to check equality of two lines
-    public void checkEqualityOfLines(int length1, int length2) {
-        if (length1 == length2) {
-            System.out.println("Length of both lines is equal");
-        } else
-            System.out.println("Length of both lines is not equal");
+    // Method to compare two lines
+    public void compareTwoLines(Integer length1, Integer length2) {
+        if (length1.compareTo(length2) == 0) {
+            System.out.println("Both lines are equal");
+        } else if (length1.compareTo(length2) < 0) {
+            System.out.println("Line1 is smaller than line2");
+        } else if (length1.compareTo(length2) > 0) {
+            System.out.println("Line1 is greater than line2");
+        }
     }
 
     public static void main(String[] args) {
@@ -51,6 +54,6 @@ public class LineComparison {
         int length2 = lineComparison2.calculateLength();
         System.out.println("Length of Line2: " + length2);
         LineComparison lineComparison = new LineComparison();
-        lineComparison.checkEqualityOfLines(length1, length2);
+        lineComparison.compareTwoLines(length1, length2);
     }
 }
