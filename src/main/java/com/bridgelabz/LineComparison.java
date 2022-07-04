@@ -1,8 +1,8 @@
 package com.bridgelabz;
 /*
  * @author: Nikhil Deshmukh
- * As a fan of geometry, I want to compare two lines based on the end points,
- * So that I know one line is equal, greater or less than the other line.
+ * Use Java Object Oriented Programming Concepts of Line and Point as well as equals and compareTo methods.
+ * - Using Java compareTo method to compare So that I know one line is equal, greater or less than the other line.
  */
 
 import java.util.Scanner;
